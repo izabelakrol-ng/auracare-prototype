@@ -970,14 +970,9 @@ function TopNav({ onHome, onDash, apptCount }) {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-border-neutral-soft)] bg-[var(--color-surface-interactive-strong)]">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <button onClick={onHome} className="flex items-center gap-2.5">
-          <span className="grid size-9 shrink-0 place-content-center rounded-[var(--radius-m)] bg-white/15 text-white">
-            <Sparkles className="size-5" />
-          </span>
-          <span className="flex flex-col items-start leading-none">
-            <span className="text-l1-strong text-white">AuraCare</span>
-            <span className="text-l5-medium text-[var(--color-text-active-interactive-on-accent)]">Boutique HealthTech</span>
-          </span>
+        <button onClick={onHome} className="flex flex-col items-start leading-none">
+          <span className="text-l1-strong text-white">AuraCare</span>
+          <span className="text-l5-medium text-[var(--color-text-active-interactive-on-accent)]">Boutique HealthTech</span>
         </button>
         <div className="flex items-center gap-2">
           <button onClick={onDash} className="relative inline-flex h-10 items-center gap-2 rounded-[var(--radius-m)] px-3 text-l3-medium text-white transition-colors hover:bg-white/10">
