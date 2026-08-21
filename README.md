@@ -1,30 +1,15 @@
-# AuraCare — Silk DS prototype
-
-A fully interactive, responsive single-page React prototype for a boutique
-HealthTech booking platform, built on the **Silk Design System** (semantic
-tokens, component anatomy and state matrix) with an AuraCare brand theme.
+# AuraCare — authentic Silk DS build
 
 Live: https://izabelakrol-ng.github.io/auracare-prototype/
 
-## Stack
-- React 19 + Vite
-- Tailwind (utility classes) + Silk design tokens (injected CSS variables)
-- lucide-react icons
-- Photos: Unsplash
+An interactive, responsive booking prototype for the boutique HealthTech
+platform **AuraCare**, built on the **real** Silk Design System
+(`@silk/components` — Radix UI + Tailwind v4 + Phosphor icons). AuraCare is a
+Silk **token mode** (Deep Emerald / Mint / Gold) applied on `<html>`.
 
-## Develop
+This repository hosts the **prebuilt static site** in [`site/`](site/) (the
+authentic build needs the full Silk workspace to compile, so the compiled
+output is committed and served as-is). `.github/workflows/deploy.yml` publishes
+`site/` to GitHub Pages on every push to `main`.
 
-```bash
-npm install
-npm run dev      # http://localhost:5173
-```
-
-## Build
-
-```bash
-npm run build    # -> dist/
-npm run preview
-```
-
-Deployed to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`.
-The whole app lives in [`src/App.jsx`](src/App.jsx).
+The source of the app lives in the Silk monorepo under `auracare-silk/`.
